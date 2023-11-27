@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+} 
+
+* {
+    box-sizing: inherit;
+} 
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+header {
+    background: #8DB371;
+    padding: .7rem;
+    padding-left: 1.3rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+    margin-left: 1rem;
+    padding: 1rem 1rem;
+}
+
+
+body {
+    color: #000;
+    font-family: Georgia, serif;
+    margin: 0;
+    max-width: 100%;
+}
+
+article {
+    background: #fff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 2rem 11rem;
+    max-width: 100%;
+}
+
+#romance_graphic {
+    height: 180px;
+    width: 180px;
+    margin: 3rem auto;
+}
+
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    border-color: #8DB371;
+    border-style: solid;
+}
+
