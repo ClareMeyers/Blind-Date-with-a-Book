@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Blind Date with a Book </title>
+    <link rel="stylesheet" href="styles/romance.css">
+</head>
+   
+    <body>
+        <header>
+
+		    <h1>Blind Date with a Book</h1>
+
+		    <nav>
+			    <ul>
+				    <li><a href="homepage.html">Home</a></li>
+				    <li><a href="romance.html">Romance</a></li>
+				    <li><a href="mystery.html">Mystery</a></li>
+                    <li><a href="fantasy.html">Fantasy & Sci-Fi</a></li>
+                    <li><a href="nonfiction.html">Non-Fiction</a></li>
+			    </ul>
+		    </nav>
+
+	    </header>
+
+        <h2>Romance</h2>
+    
+        <h2 id="book1-title"> Mystery Book 1 </h2> 
+
+        <div class="container">
+            <div class="book">
+                <div class="book-cover cover1">
+                    <div class="effect">
+                    </div>
+                    <div class="light">
+                    </div>
+                </div>
+                <div class="book-inside">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="book">
+            
+            <div id="book1-container">
+                <button onclick="revealTropes(1)">Reveal Tropes</button>
+                <p id="book1-tropes"></p>
+                <button onclick="revealName(1)"> Reveal Name </button>
+                <p id="book1-name"></p>
+            </div>
+
+
+            <div id="book2-container">
+                <h2 id="book2-title"> Mystery Book 2 </h2>
+                <button onclick="revealSynopsis(2)">Reveal Synopsis</button>
+                <p id="book2-synopsis"></p>
+            </div>
+
+            <div id="book3-container"></div>
+            <div id="book4-container"></div>
+            <div id="book5-container"></div>
+        </div>
+        <script src="scripts/books.js"></script>
+    </body>
+</html>
+
+
+
+

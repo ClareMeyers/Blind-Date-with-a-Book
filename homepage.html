@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Blind Date with a Book </title>
     <link rel="stylesheet" href="styles/homepage.css">
+	<link rel="stylesheet" href="styles/carousel.css">
 </head>
 
 <body>
@@ -25,9 +26,45 @@
 
 	</header>
 
-    <div id="carousel">
-        <!-- Pull from https://codepen.io/wraybowling/pen/dXKVaL -->
-    </div>
+    
+		<script src="https://tympanus.net/Development/Elastislide/js/modernizr.custom.17475.js"></script>	
+		<!-- Elastislide Carousel -->
+							<ul id="carousel" class="elastislide-list">
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/1.jpg" alt="image01" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/2.jpg" alt="image02" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/3.jpg" alt="image03" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/4.jpg" alt="image04" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/5.jpg" alt="image05" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/6.jpg" alt="image06" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/7.jpg" alt="image07" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/8.jpg" alt="image08" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/9.jpg" alt="image09" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/10.jpg" alt="image10" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/11.jpg" alt="image11" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/12.jpg" alt="image12" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/13.jpg" alt="image13" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/14.jpg" alt="image14" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/15.jpg" alt="image15" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/16.jpg" alt="image16" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/17.jpg" alt="image17" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/18.jpg" alt="image18" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/19.jpg" alt="image19" /></a></li>
+								<li><a href="#"><img src="https://tympanus.net/Development/Elastislide/images/small/20.jpg" alt="image20" /></a></li>
+							</ul>
+							<!-- End Elastislide Carousel -->
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+				<script type="text/javascript" src="https://tympanus.net/Development/Elastislide/js/jquerypp.custom.js"></script>
+				<script type="text/javascript" src="https://tympanus.net/Development/Elastislide/js/jquery.elastislide.js"></script>
+				<script type="text/javascript">
+					
+					$( '#carousel'
+			  ).elastislide( {
+						minItems : 2
+					} );
+					
+				</script>
+		
 
 	<article>
     	
