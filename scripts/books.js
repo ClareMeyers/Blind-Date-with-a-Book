@@ -1,8 +1,8 @@
 // books.js
 var books = {
     1: {
-        name: "Dracula",
-        author: "Bram Stoker",
+        author: "This book was written by a Queer American author who grew up in Louisiana and currently lives in New York City.",
+        quotes: "“The phrase 'see attached bibliography' is the single sexiest thing you have ever written to me.”",
         tropes: "Enemies to lovers, Queer Romance, Alternate history of the 21st century, The burden of fame"
     },
     2: {
@@ -28,7 +28,18 @@ function revealTropes (bookNumber) {
     isTropesvisible[bookNumber] = !isTropesvisible[bookNumber]; // toggles
 }
 
+var isAuthorvisible = {};
 
-function revealName(bookNumber){
-    document.getElementById("book" + bookNumber + "-name").innerHTML = books[bookNumber].name;
-};
+function revealAuthor(bookNumber){
+    console.log(books[bookNumber].author);
+    var authorElement = document.getElementById("book" + bookNumber + "-author");
+
+    // Hides and reveals button when clicked
+    if (isAuthorvisible[bookNumber]) {
+        authorElement.innerHTML = ""; // clears
+    } else {
+        console.log(books[bookNumber].author);
+        authorElement.innerHTML = books[bookNumber].author; //reveals
+    }
+    isAuthorvisible[bookNumber] = !isAuthorvisible[bookNumber]; // toggles
+}
