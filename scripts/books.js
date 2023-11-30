@@ -3,7 +3,7 @@ var books = {
     1: {
         name: "Dracula",
         author: "Bram Stoker",
-        tropes: "It's about a vampire."
+        tropes: "Enemies to lovers, Queer Romance, Alternate history of the 21st century, The burden of fame"
     },
     2: {
         name: 'another book',

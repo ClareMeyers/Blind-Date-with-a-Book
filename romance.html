@@ -32,31 +32,38 @@
 
     <article>
 
-    
-        <h2 id="book1-title"> Mystery Book 1 </h2> 
-
         <div class="container">
-            <div class="book">
-                <div class="book-cover cover1">
-                    <div class="effect">
+
+            <div class="book_container">
+                <h2 id="book1-title"> Mystery Book 1 </h2> 
+                <div class="book">
+                    <div class="book-cover cover1">
+                        <div class="effect">
+                        </div>
+                        <div class="light">
+                        </div>
                     </div>
-                    <div class="light">
+                    <div class="book-inside">
                     </div>
-                </div>
-                <div class="book-inside">
                 </div>
             </div>
+
+            <div class="book_description">
+                <h3>About the book</h3>
+
+                <p>A secret romance between two famous teenagers unfolds against the backdrop of American and British politics. </p>
+        
+                <div id="book1-container">
+                    <button onclick="revealTropes(1)">Reveal Tropes</button>
+                    <p id="book1-tropes"></p>
+                    <button onclick="revealName(1)"> Reveal Author Info </button>
+                    <p id="book1-name"></p>
+                    <button onclick="revealQuote(1)"> Reveal A Key Quote </button>
+                    <p id="book1-name"></p>
+                </div>
+            </div>
+
         </div>
-
-
-        <div id="book">
-            
-            <div id="book1-container">
-                <button onclick="revealTropes(1)">Reveal Tropes</button>
-                <p id="book1-tropes"></p>
-                <button onclick="revealName(1)"> Reveal Name </button>
-                <p id="book1-name"></p>
-            </div>
 
 
             <div id="book2-container">
@@ -68,7 +75,7 @@
             <div id="book3-container"></div>
             <div id="book4-container"></div>
             <div id="book5-container"></div>
-        </div>
+    
 
     </article>
 

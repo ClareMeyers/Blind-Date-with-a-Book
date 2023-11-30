@@ -66,29 +66,45 @@ body {
 
 article {
     background: #fff;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 21px;
+    line-height: 2.1rem;
+    margin-bottom: 25px;
     padding: 1.5rem 14rem;
     max-width: 100%;
+}
+
+.genres {
+    display: inline-block; /* Ensures the images are displayed in a row */
+    margin: 1rem;
+    padding-bottom: 10rem;
+    border: 2.5px solid #4c7644; /* Color of the border */
 }
 
 .graphic {
     height: 200px;
     width: 200px;
-    margin: 1.3rem; /* Adjust the margin as needed */
-    display: inline-block; /* Ensures the images are displayed in a row */
 }
 
 #romance_graphic {
     margin-left: 0;
 }
 
+.caption {
+    position: absolute;
+    width: 100%;
+    color: rgb(5, 5, 5);
+    padding: 10px;
+    text-align: left;
+    width: 200px;
+    font-size: 19px;
+}
+
 footer {
-    background: #fff;
+    background: #4c7644;
     text-align: center;
     padding: 1rem;
     margin: 2rem;
-    border-color: #8DB371;
-    border-style: solid;
+    color: #fff;
+    font-size: 18px;
 }
 

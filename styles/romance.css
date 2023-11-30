@@ -12,6 +12,7 @@ h1{
     font-family: 'Courgette', cursive, Georgia, serif;
     text-shadow: .8px .8px 1px #000;
 }
+
 header {
     background: #4c7644;
     color: #fff;
@@ -57,29 +58,46 @@ nav ul li {
 
 article {
     background: #fff;
-    font-size: 1rem;
-    line-height: 2rem;
-    padding: 2rem 11rem;
+    font-size: 21px;
+    line-height: 2.1rem;
+    margin-bottom: 25px;
+    padding: 1.5rem 14rem;
     max-width: 100%;
 }
 
 .container {
+    display:flex;
+    flex-wrap:wrap;
+    padding: 1rem;
+}
+
+.book_container {
     width:30%;
     height: auto;
-    display: flex;
-    justify-content: left;
-    align-items: left;
+    width: 30%; 
+    margin-right: 15px;
   }
+
+.book_description {
+    padding-top: 3.5rem;
+    width: 65%; 
+}
+
+#book1-container {
+    width: 100%; 
+}
   
-  
+
+
+
+
+
   .book {
     width: 210px;
     height: 320px;
     position:relative;
-    text-align: center;
-    margin:8%;
   }
-  
+
   .book-cover {
     position: absolute;
     z-index:1;
