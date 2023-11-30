@@ -45,13 +45,16 @@ nav ul li {
 #banner {
     color: #fff;
     text-shadow: .5px .5px .8px #262626;
-    background-image: url("../graphics/romance_banner.jpg");
+    background-image: url("../graphics/homepage_banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 3rem;
+    padding-bottom: 8.5rem;
+    padding-top: 1.8rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
     margin: 0;
     font-family: Georgia, serif;
-    font-size: 50px;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -65,14 +68,19 @@ article {
     background: #fff;
     font-size: 1.2rem;
     line-height: 2rem;
-    padding: 2rem 11rem;
+    padding: 1.5rem 14rem;
     max-width: 100%;
 }
 
+.graphic {
+    height: 200px;
+    width: 200px;
+    margin: 1.3rem; /* Adjust the margin as needed */
+    display: inline-block; /* Ensures the images are displayed in a row */
+}
+
 #romance_graphic {
-    height: 180px;
-    width: 180px;
-    margin: 3rem auto;
+    margin-left: 0;
 }
 
 footer {
