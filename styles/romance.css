@@ -86,7 +86,33 @@ article {
 #book1-container {
     width: 100%; 
 }
-  
+
+
+button {
+	box-shadow: 0px 0px 33px -11px #ffffff;
+	background:linear-gradient(to bottom, #e88e89 5%, #f07a78 100%);
+	background-color:#e88e89;
+	border-radius:42px;
+	border:3px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:19px;
+	font-weight:bold;
+	font-style:italic;
+	padding:13px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #757575;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f07a78 5%, #e88e89 100%);
+	background-color:#f07a78;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 
 
