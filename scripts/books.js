@@ -24,6 +24,18 @@ var books = {
         quote: '"When you walk on the beach at night, you can say things you can’t say in real life. In the dark you can feel really close to a person. You can say whatever you want.”',
         cover: 'book_covers/summer_i_turned_pretty.jpg'
     },
+    5: {
+        tropes: 'Love triangle with brothers, Coming-of-age, Sunny vs grumpy',
+        author: 'This #1 New York Times bestselling author has received notable acclaim over her two YA romance trilogies, one of which was adapted into an Amazon original series(it might be this one).',
+        quote: '"When you walk on the beach at night, you can say things you can’t say in real life. In the dark you can feel really close to a person. You can say whatever you want.”',
+        cover: 'book_covers/summer_i_turned_pretty.jpg'
+    },
+    6: {
+        tropes: 'Misjudged death, Incompetent police, Blackmail, Amateur sleuth, Small town secrets',
+        author: 'This book was written by a British author of young adult novels, who wrote her first book when she was only 15.',
+        quote: 'Who am I between the projects and the assignments, when there’s nothing to do? I haven’t found her yet and it scares me. Maybe that’s why, for my senior capstone project this year, I decided to solve a murder.”',
+        cover: 'book_covers/good_girls_guide_to_murder.jpg'
+    },
 };
 
 // Currently visible
@@ -49,7 +61,7 @@ function handleReveal(bookNumber) {
         var imgElement = document.createElement("img");
         imgElement.src = books[bookNumber].cover;
         imgElement.style.width = "100%"; 
-        imgElement.style.height = "auto";
+        imgElement.style.height = "100%";
         // Clear the existing content in the coverElement
         coverElement.innerHTML = "";
         // Append the image element to the coverElement
