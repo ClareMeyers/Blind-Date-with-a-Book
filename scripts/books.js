@@ -4,6 +4,7 @@ var books = {
         tropes: 'Enemies to lovers, Queer Romance, Alternate history of the 21st century, The burden of fame',
         author: 'This book was written by a Queer American author who grew up in Louisiana and currently lives in New York City.',
         quote: '“The phrase "see attached bibliography" is the single sexiest thing you have ever written to me.”',
+        cover: './book_covers/red_white_and_royal_blue.jpg'
     },
     2: {
         tropes: 'Enemies to Lovers, Fake dating, Stuck together',
@@ -22,9 +23,29 @@ var books = {
     },
 };
 
+// Currently visible
 var isTropesvisible = {};
+var isAuthorvisible = {};
+var isQuotevisible = {};
 
-function revealTropes (bookNumber) {
+// Clicked at least once
+var isTropesClicked = {};
+var isAuthorClicked = {};
+var isQuoteClicked = {};
+
+var revealedCount = 0;
+
+
+function handleReveal(bookNumber) {
+    if (isTropesClicked[bookNumber] && isAuthorClicked[bookNumber] && isQuoteClicked[bookNumber]) {
+        var coverElement = document.getElementsByClassName("cover" + bookNumber)[0];
+        coverElement.innerHTML = "<img src='" + books[bookNumber].cover + "' />";
+    }
+}
+
+
+
+function revealTropes(bookNumber) {
     console.log(books[bookNumber].tropes);
     var tropesElement = document.getElementById("book" + bookNumber + "-tropes");
 
@@ -33,15 +54,20 @@ function revealTropes (bookNumber) {
         tropesElement.innerHTML = ""; // clears
     } else {
         console.log(books[bookNumber].tropes);
-        tropesElement.innerHTML = books[bookNumber].tropes; //reveals
+        var tropes = books[bookNumber].tropes;
+        var tropeBulletsArray = tropes.split(",");
+        var tropesBulletsLis = tropeBulletsArray.map(element => (
+            '<li>' + element.trim() + '</li>'
+        ));
+        tropesElement.innerHTML = '<ul>' + tropesBulletsLis.join('') + '</ul>';
+        isTropesClicked[bookNumber] = true;
     }
     isTropesvisible[bookNumber] = !isTropesvisible[bookNumber]; // toggles
+    handleReveal(bookNumber);
 }
 
 
-var isAuthorvisible = {};
-
-function revealAuthor(bookNumber){
+function revealAuthor(bookNumber) {
     console.log(books[bookNumber].author);
     var authorElement = document.getElementById("book" + bookNumber + "-author");
 
@@ -51,14 +77,13 @@ function revealAuthor(bookNumber){
     } else {
         console.log(books[bookNumber].author);
         authorElement.innerHTML = books[bookNumber].author; //reveals
+        isAuthorClicked[bookNumber] = true;
     }
     isAuthorvisible[bookNumber] = !isAuthorvisible[bookNumber]; // toggles
+    handleReveal(bookNumber);
 }
 
-
-var isQuotevisible = {};
-
-function revealQuote (bookNumber) {
+function revealQuote(bookNumber) {
     console.log(books[bookNumber].quote);
     var quoteElement = document.getElementById("book" + bookNumber + "-quote");
 
@@ -68,6 +93,9 @@ function revealQuote (bookNumber) {
     } else {
         console.log(books[bookNumber].quote);
         quoteElement.innerHTML = books[bookNumber].quote; //reveals
+        isQuoteClicked[bookNumber] = true;
     }
     isQuotevisible[bookNumber] = !isQuotevisible[bookNumber]; // toggles
+    handleReveal(bookNumber);
 }
+
