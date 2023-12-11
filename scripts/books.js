@@ -4,22 +4,25 @@ var books = {
         tropes: 'Enemies to lovers, Queer Romance, Alternate history of the 21st century, The burden of fame',
         author: 'This book was written by a Queer American author who grew up in Louisiana and currently lives in New York City.',
         quote: '“The phrase "see attached bibliography" is the single sexiest thing you have ever written to me.”',
-        cover: './book_covers/red_white_and_royal_blue.jpg'
+        cover: 'book_covers/red_white_and_royal_blue.jpg'
     },
     2: {
         tropes: 'Enemies to Lovers, Fake dating, Stuck together',
         author: 'This book was written by two longtime writing partners and best friends who operate under one combined pen name.',
         quote: '“I’m a terrible liar.” <p>“Really? You hid it so well.” </p> “It’s never been my strength, okay? Those of us who aren’t summoned by the Dark Mark consider honesty to be a virtue.”',
+        cover: 'book_covers/unhoneymooners.jpg'
     },
     3: {
         tropes: 'Queer Romance, The burden of fame, Forbidden love, Found family, Rags to riches, Anti-hero archetype',
         author: 'This book was written by an American author with four New York Times Bestselling novels(including this one), one of which was adapted into an Amazon original miniseries(not this one).',
         quote: '“You do not know how fast you have been running, how hard you have been working, how truly exhausted you are, until somewhat stands behind you and says, “It’s OK, you can fall down now. I’ll catch you.”',
+        cover: 'book_covers/evelyn_hugo.jpg'
     },
     4: {
         tropes: 'Love triangle with brothers, Coming-of-age, Sunny vs grumpy',
         author: 'This #1 New York Times bestselling author has received notable acclaim over her two YA romance trilogies, one of which was adapted into an Amazon original series(it might be this one).',
         quote: '"When you walk on the beach at night, you can say things you can’t say in real life. In the dark you can feel really close to a person. You can say whatever you want.”',
+        cover: 'book_covers/summer_i_turned_pretty.jpg'
     },
 };
 
@@ -38,11 +41,22 @@ var revealedCount = 0;
 
 function handleReveal(bookNumber) {
     if (isTropesClicked[bookNumber] && isAuthorClicked[bookNumber] && isQuoteClicked[bookNumber]) {
+        //replaces the cover
         var coverElement = document.getElementsByClassName("cover" + bookNumber)[0];
-        coverElement.innerHTML = "<img src='" + books[bookNumber].cover + "' />";
-    }
-}
+        coverElement.innerHTML = "<img src='" + books[bookNumber].cover + "' />" ;
 
+        //resizes all covers to fit the container 
+        var imgElement = document.createElement("img");
+        imgElement.src = books[bookNumber].cover;
+        imgElement.style.width = "100%"; 
+        imgElement.style.height = "auto";
+        // Clear the existing content in the coverElement
+        coverElement.innerHTML = "";
+        // Append the image element to the coverElement
+        coverElement.appendChild(imgElement);
+    }
+    
+}
 
 
 function revealTropes(bookNumber) {

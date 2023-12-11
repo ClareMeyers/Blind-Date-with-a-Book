@@ -83,9 +83,6 @@ article {
     width: 65%; 
 }
 
-#book1-container {
-    width: 100%; 
-}
 
 
 button {
@@ -106,7 +103,6 @@ button {
 	text-shadow:0px 1px 0px #757575;
 }
 
-/* The following styles are a modified version of *Codepen attribution here*/
 
 .myButton:hover {
 	background:linear-gradient(to bottom, #f07a78 5%, #e88e89 100%);
@@ -116,6 +112,8 @@ button {
 	position:relative;
 	top:1px;
 }
+
+/* The following styles are a modified version of *Codepen attribution here*/
 
 .book {
   width: 210px;
@@ -140,18 +138,10 @@ button {
   -webkit-transition: all .5s ease-in-out;
 }
 
-.cover1 {
-  background: url('../graphics/romance_mystery_cover.jpg');
-}
-
-.cover2 {
-  background: url('http://fuel-design.com/media/uploads/publications/Tattoo_Vol_I_cover.jpg');
-}
-
 .book .book-cover {
+  background: url('../graphics/romance_mystery_cover.jpg');
   background-size: 100% 100%;
 }
-
 
 .effect {
   width: 20px;
