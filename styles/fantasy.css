@@ -116,6 +116,22 @@ button {
   position:relative;
 }
 
+.reveal {
+  display: none;
+}
+
+footer {
+  background: #4c7644;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  color: #fff;
+  font-size: 18px;
+}
+
+footer a {
+  text-decoration: underline;
+}
 
 /* The following styles are a modified version of a CodePen animation called "Pure CSS Book Hover" created by Omer Cetin. The URL is here: https://codepen.io/omercetin/pen/abOKPjo */
 
@@ -209,7 +225,7 @@ button {
 }
 
 
-/* Media query */
+/* Media query written by me*/
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 38px;

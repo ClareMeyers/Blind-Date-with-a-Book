@@ -110,13 +110,31 @@ button {
 	top:1px;
 }
 
-/* The following styles are a modified version of *Codepen attribution here*/
-
 .book {
   width: 210px;
   height: 320px;
   position:relative;
 }
+
+#reveal {
+  display: none;
+}
+
+footer {
+  background: #4c7644;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  color: #fff;
+  font-size: 18px;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+/* The following styles are a modified version of a CodePen animation called "Pure CSS Book Hover" created by Omer Cetin. The URL is here: https://codepen.io/omercetin/pen/abOKPjo */
+
 
 .book-cover {
   position: absolute;

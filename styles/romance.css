@@ -72,15 +72,19 @@ article {
 }
 
 .book_container {
+  font: bold;
   width: 30%;
   height: auto;
-  width: 30%;
   margin-right: 15px;
 }
 
 .book_description {
   padding-top: 3.5rem;
   width: 65%;
+}
+
+.reveal {
+  display: none;
 }
 
 button {
@@ -110,6 +114,19 @@ button {
   width: 210px;
   height: 320px;
   position: relative;
+}
+
+footer {
+  background: #4c7644;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  color: #fff;
+  font-size: 18px;
+}
+
+footer a {
+  text-decoration: underline;
 }
 
 /* The following styles are a modified version of a CodePen animation called "Pure CSS Book Hover" created by Omer Cetin. The URL is here: https://codepen.io/omercetin/pen/abOKPjo */
@@ -188,7 +205,9 @@ button {
   box-shadow: 10px 40px 40px -10px #00000030, inset -2px 0 0 grey, inset -3px 0 0 #dbdbdb, inset -4px 0 0 white, inset -5px 0 0 #dbdbdb, inset -6px 0 0 white, inset -7px 0 0 #dbdbdb, inset -8px 0 0 white, inset -9px 0 0 #dbdbdb;
 }
 
-/* Media query */
+
+
+/* Media query written by me*/
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 38px;
