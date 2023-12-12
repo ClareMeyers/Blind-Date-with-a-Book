@@ -44,14 +44,12 @@ nav ul li {
 
 #banner {
     color: #fff;
-    text-shadow: .5px .5px .8px #262626;
+    text-shadow: 0.5px 0.5px 0.8px #262626;
     background-image: url("../graphics/homepage_banner.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    padding: 1.8rem;
     padding-bottom: 8.5rem;
-    padding-top: 1.8rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
     margin: 0;
     font-family: Georgia, serif;
     font-size: 32px;
@@ -72,15 +70,14 @@ article {
     margin-right: auto;
     margin-bottom: 25px;
     padding: 1.5rem 14rem;
-    max-width: 100%;
-    width: 50em;
+    max-width: 80ch; /* Makes sure text lines dont exceed 80 characters */
 }
 
 .genres {
-    display: inline-block; /* Ensures the images are displayed in a row */
-    margin: 1rem;
+    display: inline-block; /* Ensures the images are displayed in the even-spaced block*/
+    margin: 2rem;
     padding-bottom: 10rem;
-    border: 2.5px solid #4c7644; /* Color of the border */
+    border: 3px solid #4c7644; /* Color of the border */
 }
 
 .graphic {
@@ -88,13 +85,8 @@ article {
     width: 200px;
 }
 
-#romance_graphic {
-    margin-left: 0;
-}
-
 .caption {
     position: absolute;
-    width: 100%;
     color: rgb(5, 5, 5);
     padding: 10px;
     text-align: left;
@@ -105,9 +97,13 @@ article {
 footer {
     background: #4c7644;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     margin: 2rem;
     color: #fff;
     font-size: 18px;
+}
+
+footer a {
+    text-decoration: underline;
 }
 

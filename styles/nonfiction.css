@@ -1,0 +1,210 @@
+html {
+    box-sizing: border-box;
+} 
+
+* {
+    box-sizing: inherit;
+} 
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Courgette', cursive, Georgia, serif;
+    text-shadow: .8px .8px 1px #000;
+}
+
+header {
+    background: #4c7644;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 1.6rem;
+    padding-right: .8rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia, serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+    margin-left: 1rem;
+    padding: .8rem;
+}
+
+#banner {
+    color: #fff;
+    text-shadow: .5px .5px .8px #262626;
+    background-image: url("../graphics/romance_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+article {
+    background: #fff;
+    font-size: 21px;
+    line-height: 2.1rem;
+    margin-bottom: 25px;
+    padding: 1.5rem 14rem;
+    max-width: 100%;
+}
+
+.container {
+    display:flex;
+    flex-wrap:wrap;
+    padding: 1rem;
+}
+
+.book_container {
+    width:30%;
+    height: auto;
+    width: 30%; 
+    margin-right: 15px;
+  }
+
+.book_description {
+    padding-top: 3.5rem;
+    width: 65%; 
+}
+
+
+
+button {
+	box-shadow: 0px 0px 33px -11px #ffffff;
+	background:linear-gradient(to bottom, #e88e89 5%, #f07a78 100%);
+	background-color:#e88e89;
+	border-radius:42px;
+	border:3px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:19px;
+	font-weight:bold;
+	font-style:italic;
+	padding:13px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #757575;
+}
+
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #f07a78 5%, #e88e89 100%);
+	background-color:#f07a78;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* The following styles are a modified version of *Codepen attribution here*/
+
+.book {
+  width: 210px;
+  height: 320px;
+  position:relative;
+}
+
+.book-cover {
+  position: absolute;
+  z-index:1;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  background: #111;
+  background-size:cover;
+  border-radius: 3px;
+  box-shadow: 
+    inset 4px 1px 3px #ffffff60,
+    inset 0 -1px 2px #00000080;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.book .book-cover {
+  background: url('../graphics/romance_mystery_cover.jpg');
+  background-size: 100% 100%;
+}
+
+.effect {
+  width: 20px;
+  height: 100%;
+  margin-left: 10px;
+  border-left: 2px solid #00000010;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+  transition: all .5s ease;
+}
+
+.light {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  border-radius: 3px; 
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%);
+  top: 0;
+  right:0;
+  opacity: .1;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+
+.book:hover { cursor:pointer; }
+
+.book:hover .book-cover {
+  transform: perspective(2000px) rotateY(-30deg);
+  -webkit-transform: perspective(2000px) rotateY(-30deg);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 
+    inset 4px 1px 3px #ffffff60,
+    inset 0 -1px 2px #00000080,
+    10px 0px 10px -5px #00000030
+}
+
+.book:hover .effect {
+  width: 40px;
+ /** margin-left:13px;
+  opacity: 0.5; **/
+}
+
+.book:hover .light {
+  opacity: 1;
+  width: 70%;
+}
+
+.book-inside{
+  width: calc(100% - 2px);
+  height:96%;
+  position:relative;
+  top: 2%;
+  border: 1px solid grey;
+  border-radius:3px;
+  background: white;
+  box-shadow: 
+  10px 40px 40px -10px #00000030,
+  inset -2px 0 0 grey,
+  inset -3px 0 0 #dbdbdb,
+  inset -4px 0 0 white,
+  inset -5px 0 0 #dbdbdb,
+  inset -6px 0 0 white,
+  inset -7px 0 0 #dbdbdb,
+  inset -8px 0 0 white,
+  inset -9px 0 0 #dbdbdb;
+}
