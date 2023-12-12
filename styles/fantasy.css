@@ -87,8 +87,8 @@ article {
 
 button {
 	box-shadow: 0px 0px 33px -11px #ffffff;
-	background:linear-gradient(to bottom, #e88e89 5%, #f07a78 100%);
-	background-color:#e88e89;
+	background:linear-gradient(to bottom, #523C71 5%, #3c265a 100%);
+	background-color:#523C71;
 	border-radius:42px;
 	border:3px solid #ffffff;
 	display:inline-block;
@@ -104,10 +104,6 @@ button {
 }
 
 
-.myButton:hover {
-	background:linear-gradient(to bottom, #f07a78 5%, #e88e89 100%);
-	background-color:#f07a78;
-}
 .myButton:active {
 	position:relative;
 	top:1px;

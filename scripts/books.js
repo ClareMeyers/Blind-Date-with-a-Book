@@ -78,6 +78,12 @@ var books = {
         quote: '“Libraries were full of ideas—perhaps the most dangerous and powerful of all weapons.”',
         cover: 'book_covers/throne_of_glass.jpg'
     },
+    14: {
+        tropes: 'Deadly competition, Teenage assassin, Love Triangle, Fae, Hidden past',
+        author: 'The author of this book is a famous American science fiction writer who has recently had his work adapted into a movie franchise (it might be this one).',
+        quote: '“Libraries were full of ideas—perhaps the most dangerous and powerful of all weapons.”',
+        cover: ''
+    },
 };
 
 // Currently visible
