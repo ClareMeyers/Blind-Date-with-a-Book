@@ -110,35 +110,64 @@ footer a {
 
 /* Media query */
 @media screen and (max-width: 600px) {
-   
+
     h1{
-        font-size: 25px;
+        font-size: 38px;
     }
-
+   
     header {
-        font-size: 12px;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        margin: 0;
-        display:block;
+        padding: 0.4rem;
+        padding-left: 0.8rem; /* Adjust padding for smaller screens */
+        margin: 0.5rem;
     }
 
-    
-    article {
-        background: #fff;
-        font-size: 1.2rem;
-        line-height: 2rem;
-        max-width: 800px; 
-        margin: 2rem auto;
-        margin-left: 2rem; 
-        margin-right: 2rem; 
-        padding: 1rem; 
-        border-style: solid;
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center-align navigation items */
+        text-align: right;
+        font-size: 16px;
     }
-    
+
+    nav ul li {
+        margin-bottom: 0.2rem; /* Add space between navigation items */
+    }
+
+    a {
+        text-decoration:underline
+    }
+
+    #banner {
+        padding: 0.8rem; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        background-image:none; 
+        background-color: #C0B4A0;
+        color: #fff;
+        margin: 0.5rem;
+    }
+
+    article {
+        padding: 1.8rem 1.8rem; /* Adjust padding for smaller screens */
+        max-width: 100%; /* Allow the text to take up the full width */
+    }
+
+    .genres {
+        margin: 1rem; /* Adjust margin for smaller screens */
+        padding-bottom: 5rem; /* Adjust padding-bottom for smaller screens */
+    }
+
+    .graphic {
+        height: auto; /* Allow the image to adjust its height */
+        width: 100%; /* Allow the image to take up the full width */
+    }
+
+    .caption {
+        width: 100%; /* Allow the caption to take up the full width */
+        position: inherit;
+    }
+
     footer {
-        margin: 2rem auto;
-        width: 85%;
+        padding: 1rem; /* Adjust padding for smaller screens */
+        margin: 1rem; /* Adjust margin for smaller screens */
     }
 }
 
