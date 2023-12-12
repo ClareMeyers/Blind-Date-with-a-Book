@@ -46,9 +46,9 @@ nav ul li {
 #banner {
     color: #fff;
     text-shadow: .5px .5px .8px #262626;
-    background-image: url("../graphics/romance_banner.jpg");
+    background-image: url("../graphics/nonfiction_banner.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 3rem;
     margin: 0;
     font-family: Georgia, serif;
@@ -139,7 +139,7 @@ button {
 }
 
 .book .book-cover {
-  background: url('../graphics/romance_mystery_cover.jpg');
+  background: url('../graphics/nonfiction_mystery_cover.jpg');
   background-size: 100% 100%;
 }
 
