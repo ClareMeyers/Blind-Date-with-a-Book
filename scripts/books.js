@@ -35,7 +35,7 @@ var books = {
         author: 'This book was written by a British author of young adult novels, who wrote her first book when she was only 15.',
         quote: 'Who am I between the projects and the assignments, when there’s nothing to do? I haven’t found her yet and it scares me. Maybe that’s why, for my senior capstone project this year, I decided to solve a murder.”',
         cover: 'book_covers/good_girls_guide_to_murder.jpg'
-    },
+    }
 };
 
 // Currently visible
@@ -53,33 +53,30 @@ var revealedCount = 0;
 
 function handleReveal(bookNumber) {
     if (isTropesClicked[bookNumber] && isAuthorClicked[bookNumber] && isQuoteClicked[bookNumber]) {
-        //replaces the cover
         var coverElement = document.getElementsByClassName("cover" + bookNumber)[0];
-        coverElement.innerHTML = "<img src='" + books[bookNumber].cover + "' />" ;
+        
+        // Check if the cover element exists
+        if (coverElement) {
+            // Clear the existing content
+            coverElement.innerHTML = "";
 
-        //resizes all covers to fit the container 
-        var imgElement = document.createElement("img");
-        imgElement.src = books[bookNumber].cover;
-        imgElement.style.width = "100%"; 
-        imgElement.style.height = "100%";
-        // Clear the existing content in the coverElement
-        coverElement.innerHTML = "";
-        // Append the image element to the coverElement
-        coverElement.appendChild(imgElement);
+            // Replace the cover with an image
+            var imgElement = document.createElement("img");
+            imgElement.src = books[bookNumber].cover;
+            imgElement.style.width = "100%";
+            imgElement.style.height = "100%";
+            coverElement.appendChild(imgElement);
+        }
     }
-    
 }
 
-
 function revealTropes(bookNumber) {
-    console.log(books[bookNumber].tropes);
     var tropesElement = document.getElementById("book" + bookNumber + "-tropes");
 
     // Hides and reveals button when clicked
     if (isTropesvisible[bookNumber]) {
         tropesElement.innerHTML = ""; // clears
     } else {
-        console.log(books[bookNumber].tropes);
         var tropes = books[bookNumber].tropes;
         var tropeBulletsArray = tropes.split(",");
         var tropesBulletsLis = tropeBulletsArray.map(element => (
@@ -94,14 +91,12 @@ function revealTropes(bookNumber) {
 
 
 function revealAuthor(bookNumber) {
-    console.log(books[bookNumber].author);
     var authorElement = document.getElementById("book" + bookNumber + "-author");
 
     // Hides and reveals button when clicked
     if (isAuthorvisible[bookNumber]) {
         authorElement.innerHTML = ""; // clears
     } else {
-        console.log(books[bookNumber].author);
         authorElement.innerHTML = books[bookNumber].author; //reveals
         isAuthorClicked[bookNumber] = true;
     }
@@ -110,14 +105,12 @@ function revealAuthor(bookNumber) {
 }
 
 function revealQuote(bookNumber) {
-    console.log(books[bookNumber].quote);
     var quoteElement = document.getElementById("book" + bookNumber + "-quote");
 
     // Hides and reveals button when clicked
     if (isQuotevisible[bookNumber]) {
         quoteElement.innerHTML = ""; // clears
     } else {
-        console.log(books[bookNumber].quote);
         quoteElement.innerHTML = books[bookNumber].quote; //reveals
         isQuoteClicked[bookNumber] = true;
     }
