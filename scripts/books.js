@@ -25,10 +25,10 @@ var books = {
         cover: 'book_covers/summer_i_turned_pretty.jpg'
     },
     5: {
-        tropes: 'Love triangle with brothers, Coming-of-age, Sunny vs grumpy',
-        author: 'This #1 New York Times bestselling author has received notable acclaim over her two YA romance trilogies, one of which was adapted into an Amazon original series(it might be this one).',
-        quote: '"When you walk on the beach at night, you can say things you can’t say in real life. In the dark you can feel really close to a person. You can say whatever you want.”',
-        cover: 'book_covers/summer_i_turned_pretty.jpg'
+        tropes: 'Starcrossed lovers, Queer Romance, Burden of fate, Unchecked ambition',
+        author: 'The author of this book is an American novelist, who has published two critically acclaimed Greek mythology retellings(including this one).',
+        quote: '"We reached for each other, and I thought of how many nights I had lain awake loving him in silence.”',
+        cover: 'book_covers/song_of_achilles.jpg'
     },
     6: {
         tropes: 'Misjudged death, Incompetent police, Blackmail, Amateur sleuth, Small town secrets',
