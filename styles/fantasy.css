@@ -204,3 +204,88 @@ button {
   inset -8px 0 0 white,
   inset -9px 0 0 #dbdbdb;
 }
+
+
+/* Media query */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  #book1-title {
+    font-size: 30px;
+  }
+
+  header {
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    margin: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    font-size: 16px;
+  }
+
+  nav ul li {
+    margin-bottom: 0.2rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  #banner {
+    padding: 0.8rem;
+    font-size: 14px;
+    background-image: none;
+    background-color: #523C71;
+    color: #fff;
+    margin: 0.5rem;
+  }
+
+  article {
+    padding: 0.8rem;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .book {
+    position: relative;
+  }
+
+  .book_container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .book_description {
+    width: 100%;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
