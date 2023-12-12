@@ -35,7 +35,31 @@ var books = {
         author: 'This book was written by a British author of young adult novels, who wrote her first book when she was only 15.',
         quote: 'Who am I between the projects and the assignments, when there’s nothing to do? I haven’t found her yet and it scares me. Maybe that’s why, for my senior capstone project this year, I decided to solve a murder.”',
         cover: 'book_covers/good_girls_guide_to_murder.jpg'
-    }
+    },
+    7: {
+        tropes: 'Mysterious disappearance, Amateur sleuth, Secret past',
+        author: 'This #1 New York Times bestselling author has had her work published in thirty-eight different countries.',
+        quote: '"Maybe we are all fools, one way or another, when it comes to seeing the totality of the people who love us - the people we try to love.”',
+        cover: 'book_covers/last_thing_he_told_me.jpg'
+    },
+    8: {
+        tropes: 'Unreliable narrator, Villainous victim, Stuck together, Twist ending',
+        author: 'The author of this book is an American author more commonly known for her contemporary romance novels.',
+        quote: '“What you read will taste so bad at times, you’ll want to spit it out, but you’ll swallow these words and they will become part of you, part of your gut, and you will hurt because of them.”',
+        cover: 'book_covers/verity.jpg'
+    },
+    9: {
+        tropes: 'Unreliable narrator, Dual-timelines, Unknown mystery, Villainous victim',
+        author: 'The author of this book is a former actor-turned-writer, and this is her first book.',
+        quote: '“You can justify anything if you do it poetically enough.”',
+        cover: 'book_covers/if_we_were_villians.jpg'
+    },
+    10: {
+        tropes: 'Unreliable narrator, Dual-timelines, Murder trial, Villainous victim',
+        author: 'The author of this book is an American zoologist, and this is her only novel so far.',
+        quote: '“She knew the years of isolation had altered her behavior until she was different from others, but it wasn’t her fault she’d been alone. Most of what she knew, she’d learned from the wild. Nature had nurtured, tutored, and protected her when no one else would.”',
+        cover: 'book_covers/where_the_crawdads_sing.jpg'
+    },
 };
 
 // Currently visible
