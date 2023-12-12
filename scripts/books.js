@@ -60,6 +60,24 @@ var books = {
         quote: '“She knew the years of isolation had altered her behavior until she was different from others, but it wasn’t her fault she’d been alone. Most of what she knew, she’d learned from the wild. Nature had nurtured, tutored, and protected her when no one else would.”',
         cover: 'book_covers/where_the_crawdads_sing.jpg'
     },
+    11: {
+        tropes: 'Enemy to lovers, Dysfunctional family, Dragons, Magical school',
+        author: 'The author of this book is an American writer who has recently transitioned from writing traditional romance to writing Romantasy.',
+        quote: '“A dragon without its rider is a tragedy. A rider without their dragon is dead.”',
+        cover: 'book_covers/fourth_wing.jpg'
+    },
+    12: {
+        tropes: 'The Chosen One, Political dynasties, Magical resource',
+        author: 'The author of this book is famous for her contributions to the young adult fantasy genre.',
+        quote: '“Deep in the human unconscious is a pervasive need for a logical universe that makes sense. But the real universe is always one step beyond logic.”',
+        cover: 'book_covers/dune.jpg'
+    },
+    13: {
+        tropes: 'Deadly competition, Teenage assassin, Love Triangle, Fae, Hidden past',
+        author: 'The author of this book is a famous American science fiction writer who has recently had his work adapted into a movie franchise (it might be this one).',
+        quote: '“Libraries were full of ideas—perhaps the most dangerous and powerful of all weapons.”',
+        cover: 'book_covers/throne_of_glass.jpg'
+    },
 };
 
 // Currently visible
