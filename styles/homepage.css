@@ -117,19 +117,19 @@ footer a {
    
     header {
         padding: 0.4rem;
-        padding-left: 0.8rem; /* Adjust padding for smaller screens */
+        padding-left: 0.8rem; 
         margin: 0.5rem;
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: center; /* Center-align navigation items */
+        flex-direction: column; 
+        align-items: center; 
         text-align: right;
         font-size: 16px;
     }
 
     nav ul li {
-        margin-bottom: 0.2rem; /* Add space between navigation items */
+        margin-bottom: 0.2rem; 
     }
 
     a {
@@ -137,8 +137,8 @@ footer a {
     }
 
     #banner {
-        padding: 0.8rem; /* Adjust padding for smaller screens */
-        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 0.8rem; 
+        font-size: 14px; 
         background-image:none; 
         background-color: #C0B4A0;
         color: #fff;
@@ -146,28 +146,28 @@ footer a {
     }
 
     article {
-        padding: 1.8rem 1.8rem; /* Adjust padding for smaller screens */
-        max-width: 100%; /* Allow the text to take up the full width */
+        padding: 1.8rem; 
+        max-width: 100%; 
     }
 
     .genres {
-        margin: 1rem; /* Adjust margin for smaller screens */
-        padding-bottom: 5rem; /* Adjust padding-bottom for smaller screens */
+        margin: 1rem; 
+        padding-bottom: 5rem; 
     }
 
     .graphic {
-        height: auto; /* Allow the image to adjust its height */
-        width: 100%; /* Allow the image to take up the full width */
+        height: auto; 
+        width: 100%; 
     }
 
     .caption {
-        width: 100%; /* Allow the caption to take up the full width */
+        width: 100%; 
         position: inherit;
     }
 
     footer {
-        padding: 1rem; /* Adjust padding for smaller screens */
-        margin: 1rem; /* Adjust margin for smaller screens */
+        padding: 1rem; 
+        margin: 1rem; 
     }
 }
 
